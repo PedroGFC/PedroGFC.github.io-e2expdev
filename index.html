@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositório Simulado</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5969/5969113.png" type="image/icon type"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f8fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .repository-container {
+            display: block;
+        }
+
+        .repository-header {
+            background-color: #f0f4f8;
+            border: 1px solid #e1e4e8;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .repository-header h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #0366d6;
+        }
+
+        .repository-header p {
+            margin: 5px 0 0;
+            color: #586069;
+        }
+
+        .repository-header .commits-info {
+            font-size: 14px;
+            color: #586069;
+        }
+
+        .file-list {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid #e1e4e8;
+            background-color: white;
+        }
+
+        .file-list thead {
+            background-color: #f6f8fa;
+        }
+
+        .file-list th, .file-list td {
+            padding: 12px;
+            border-bottom: 1px solid #e1e4e8;
+            text-align: left;
+        }
+
+        .file-list th {
+            color: #24292e;
+        }
+
+        .file-list tr:hover {
+            background-color: #f1f3f5;
+            cursor: pointer;
+        }
+
+        .file-list td:first-child {
+            color: #0366d6;
+            font-weight: bold;
+        }
+
+        .file-list td:last-child {
+            color: #586069;
+        }
+    </style>
+</head>
+<body>
+    <div class="repository-container">
+        <div class="repository-header">
+            <div>
+                <h2>E2EXP - Dev Repository</h2>
+                <p>Initial Version Of Repository Template</p>
+            </div>
+            <div class="commits-info">
+                <span>79c1c68</span> on 31 Aug <br> 2 commits
+            </div>
+        </div>
+
+        <table class="file-list">
+            <tbody>
+                <tr>
+                    <td>.github</td>
+                    <td>Initial Version Of Repository Template</td>
+                    <td>mês passado</td>
+                </tr>
+                <tr>
+                    <td>src</td>
+                    <td>Initial Version Of Repository Template</td>
+                    <td>mês passado</td>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>Initial Version Of Repository Template</td>
+                    <td>mês passado</td>
+                </tr>
+                <tr>
+                    <td>.gitignore</td>
+                    <td>Initial Version Of Repository Template</td>
+                    <td>mês passado</td>
+                </tr>
+                <tr>
+                    <td>CHANGE-ME.sln</td>
+                    <td>Initial Version Of Repository Template</td>
+                    <td>mês passado</td>
+                </tr>
+                <tr>
+                    <td>CODE_OF_CONDUCT.md</td>
+                    <td>Initial Version Of Repository Template</td>
+                    <td>mês passado</td>
+                </tr>
+                <tr>
+                    <td>CONTRIBUTING.md</td>
+                    <td>Initial Version Of Repository Template</td>
+                    <td>mês passado</td>
+                </tr>
+                <tr>
+                    <td>Directory.Build.props</td>
+                    <td>Initial Version Of Repository Template</td>
+                    <td>mês passado</td>
+                </tr>
+                <tr>
+                    <td>LICENSE</td>
+                    <td>Initial Version Of Repository Template</td>
+                    <td>mês passado</td>
+                </tr>
+                <tr>
+                    <td>README.md</td>
+                    <td>Initial Version Of Repository Template</td>
+                    <td>mês passado</td>
+                </tr>
+                <tr>
+                    <td>SECURITY.md</td>
+                    <td>Initial Version Of Repository Template</td>
+                    <td>mês passado</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.querySelectorAll('.file-list tr').forEach(row => {
+            row.addEventListener('click', () => {
+                alert('Cliquei no arquivo ' + row.cells[0].innerText);
+            });
+        });
+    </script>
+</body>
+</html>
